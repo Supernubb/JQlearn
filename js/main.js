@@ -216,6 +216,17 @@ $(document).ready(function () {
     // });
     // console.log($('#exampleInputEmail1').val());
 
+    // События submit и focus на jQuery, урок 34
+    // $('.form1').submit(function (e) {
+    //     if ($('#exampleInputPassword1').val() == '') {
+    //         e.preventDefault();
+    //         console.log('Have not pass!!!');
+    //     }
+    // });
+    // $('#exampleInputPassword1').focus(function () {
+    //     // Do anything
+    // });
+
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
