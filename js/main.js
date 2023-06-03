@@ -42,18 +42,32 @@ $(document).ready(function () {
     // console.log(curBlock);
 
 
-    // let curBlock = $('.secRow').fadeOut(3000).fadeIn(3000);
-    function fadeOutWhithTime(bClass, foTime) {
-        // let curBlockJq = $('.' + bClass);
-        // curBlockJq.fadeOut(foTime);
-        if (foTime > 5000 || foTime < 1000 || isNaN(foTime)) {
-            return false;
-        } else {
-            let curBlockJq = $('.' + bClass);
-            curBlockJq.fadeOut(foTime);
-        }
-    };
+    // // let curBlock = $('.secRow').fadeOut(3000).fadeIn(3000);
+    // function fadeOutWhithTime(bClass, foTime) {
+    //     // let curBlockJq = $('.' + bClass);
+    //     // curBlockJq.fadeOut(foTime);
+    //     if (foTime > 5000 || foTime < 1000 || isNaN(foTime)) {
+    //         return false;
+    //     } else {
+    //         let curBlockJq = $('.' + bClass);
+    //         curBlockJq.fadeOut(foTime);
+    //     }
+    // };
 
-    fadeOutWhithTime('secRow', 500);
+    // fadeOutWhithTime('secRow', 500);
+
+    $('.secRow').fadeTo(3000, 0.5).fadeTo(3000, 1);
+    // function fadeOutWhithTime(bClass, foTime) {
+    //     // let curBlockJq = $('.' + bClass);
+    //     // curBlockJq.fadeOut(foTime);
+    //     if (foTime > 5000 || foTime < 1000 || isNaN(foTime)) {
+    //         return false;
+    //     } else {
+    //         let curBlockJq = $('.' + bClass);
+    //         curBlockJq.fadeOut(foTime);
+    //     }
+    // };
+
+    // fadeOutWhithTime('secRow', 500);
 
 });
