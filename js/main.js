@@ -203,6 +203,19 @@ $(document).ready(function () {
     // Выбор и фильтрация элементов формы на jQuery, урок 31
     // $(':reset').fadeOut(3000);
 
+    // Фильтры состояний элементов формы на jQuery, урок 32
+    // :selected
+    // :checked
+
+    // Узнать значение элементов формы в выборке jQuery, урок 33
+    // let eInput = $('#exampleInputEmail1');
+    // let pInput = $('#exampleInputPassword1');
+    // eInput.change(function () {
+    //     pInput.val($(this).val());
+    //     console.log($(this).val());
+    // });
+    // console.log($('#exampleInputEmail1').val());
+
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
