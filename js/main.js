@@ -117,9 +117,15 @@ $(document).ready(function () {
     //     }
     // });
 
-    // Количество элементов в выборке jQuery, Свойство length, урок 21
-    let curSercs = $('.secsRow > div').length;
-    console.log(curSercs);
+    // // Количество элементов в выборке jQuery, Свойство length, урок 21
+    // let curSercs = $('.secsRow > div').length;
+    // console.log(curSercs);
+
+    // Клонирование объекта метод clone и remove, урок 22
+    // let curSercs = $('.secsRow > div').clone();
+    // // $('.secsRow').append(curSercs);
+    // let curSercs = $('.secsRow > div').remove();
+    // $('div > div> div > div ').after(curSercs);
 
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
