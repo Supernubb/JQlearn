@@ -26,8 +26,9 @@
 // sec11.hide().text('New text!').show(3000); цепная функция к переменной или $()
 
 $(document).ready(function () {
-let activeSec = $('body > div > div.row.secRow > div');
-activeSec.hide();
-console.log(activeSec);
+    let activeSec = $('body > div > div.row.secRow > div');
+    let activeSecW = activeSec.width(300);
+    let activeSecH = activeSec.height(300);
+    console.log(activeSecH, activeSecW);
 
 });
