@@ -89,6 +89,24 @@ $(document).ready(function () {
     // };
     // changeAttr('secRow', 'secID', 55);
 
+    //Работа с CSS стилями на jQuery, метод css() на jQuery, урок 17
+    // let menuButtons = $('body > div > div.row.gx-5.mb-3 > div > div');
+    // menuButtons.removeClass('bg-info').css({
+        // 'padding': '15px',
+    //     'background-color': 'rgb(255, 38, 0)'
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
     // tabs
     let nonActiveSec = $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
