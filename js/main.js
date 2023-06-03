@@ -101,7 +101,7 @@ $(document).ready(function () {
     // menuButtons.removeClass('bg-info').animate({
     //     'padding': '15px',
     //     'background-color': 'rgb(255, 38, 0)' // !на цвет не действует
-    // },2000);
+    // },2000, () => {alert('Yes!')}); // алерт будет показан столько, сколько элементов в menuButtons
 
 
 
