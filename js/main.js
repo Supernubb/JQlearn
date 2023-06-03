@@ -110,18 +110,15 @@ $(document).ready(function () {
     // secBlockELHtmlChanged.append('<div>New html append!</div>');
     // secBlockELHtmlChanged.prepend('<div>New html prepend!</div>');
 
-    // Ручные циклы на jQuery, Метод each() и $(this), урок 20
-    let curSercs = $('.secsRow > div').each(function () {
-        if ($(this).attr('class') == 'col-12 bg-primary active') {
-            $(this).addClass('eachClass');
-        }
-    });;
+    // // Ручные циклы на jQuery, Метод each() и $(this), урок 20
+    // let curSercs = $('.secsRow > div').each(function () {
+    //     if ($(this).attr('class') == 'col-12 bg-primary active') {
+    //         $(this).addClass('eachClass');
+    //     }
+    // });
 
-
-
-
-
-
+    // Количество элементов в выборке jQuery, Свойство length, урок 21
+    let curSercs = $('.secsRow > div').length;
     console.log(curSercs);
 
     // tabs
