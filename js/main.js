@@ -131,6 +131,18 @@ $(document).ready(function () {
     // $('.col-3, .col-12').css('padding', '30px');
     // $('.col-12.bg-primary[secID]').css('padding', '300px');
 
+    // Урок про События на jQuery, урок 24
+    // let curSercs = $('.secsRow > div');
+    // curSercs.mouseover(function () {
+    //     // curSercs.toggleClass('bg-primary').css('background-color', 'red');
+    //     // console.log('MouseOver!');
+    // });
+    // forms: sumbit focus blur (!focus) change reset
+    // keyboard: keypress keydown keyup
+    // window: load resize (browser window change) scroll 
+
+
+
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
