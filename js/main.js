@@ -26,9 +26,17 @@
 // sec11.hide().text('New text!').show(3000); цепная функция к переменной или $()
 
 $(document).ready(function () {
-    let activeSec = $('body > div > div.row.secRow > div');
-    let activeSecW = activeSec.width(300);
-    let activeSecH = activeSec.height(300);
-    console.log(activeSecH, activeSecW);
+    // let activeSec = $('body > div > div.row.secRow > div');
+    // let activeSecW = activeSec.width(300);
+    // let activeSecH = activeSec.height(300);
+    // console.log(activeSecH, activeSecW);
+
+    function getBlockWH(curBlock) {
+        let curBlockJq = $('.' + curBlock);
+        let curBlockW = curBlockJq.width();
+        let curBlockH = curBlockJq.height();
+        let curBlockT = curBlockJq.text('H: ' + curBlockH + ' W: ' + curBlockW);
+    };
+    getBlockWH('bg-primary');
 
 });
