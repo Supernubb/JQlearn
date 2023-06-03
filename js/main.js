@@ -227,6 +227,19 @@ $(document).ready(function () {
     //     // Do anything
     // });
 
+    // События blur и change на jQuery, урок 35
+    // $('#exampleInputPassword1').focus(function () {
+    //     console.log('focus');
+    // });
+    // $('#exampleInputPassword1').blur(function () {
+    //     console.log('blur');
+    // });
+    // $('#exampleInputEmail1').on('input', function () {
+    //     $('#exampleInputPassword1').val($(this).val());
+    // });
+
+
+
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
