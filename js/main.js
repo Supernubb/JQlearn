@@ -70,7 +70,27 @@ $(document).ready(function () {
 
     // // fadeOutWhithTime('secRow', 500);
 
-    $('.secRow').slideUp(2000).slideDown(2000);
+    // $('.secRow').slideUp(2000).slideDown(2000);
+
+
+
+
+    // let curAttr = $('body > div > div.row.secRow > div.col-12');
+    // // .attr('secID')
+    // curAttr.attr('secID', '00');
+    // curAttr.removeAttr('secID');;
+    // console.log(arAttr);
+    function removeAttr(bClass, rAttr) {
+        let curBlockJq = $('.' + bClass + ' > div.col-12');
+        curBlockJq.removeAttr(rAttr);
+        console.log(curBlockJq);
+    };
+    function changeAttr(bClass, chAttr, newValuechAttr) {
+        let curBlockJq = $('.' + bClass + ' > div.col-12');
+        curBlockJq.attr(chAttr, newValuechAttr);
+        console.log(curBlockJq);
+    };
+    changeAttr('secRow', 'secID', 55);
 
 
 });
