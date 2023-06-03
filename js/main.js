@@ -165,6 +165,13 @@ $(document).ready(function () {
     //     }
     // );
 
+    // Объект события eventObject на jQuery, урок 28
+    let curSecs = $('.secsRow > div').click(function (e) {
+        console.log(e.pageX + ' ' + e.pageY);
+        console.log(e.altKey);
+        console.log(e.target);
+    });;
+
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
