@@ -148,11 +148,28 @@ $(document).ready(function () {
     //     console.log('scroll');
     // });;
 
+    // Событие при наведении в jquery событие hover, урок 27
+    // let curSecs = $('.secsRow > div');
+    // curSecs.mouseover(function () {
+    //     $(this).addClass('border border-dark');
+    // });
+    // curSecs.mouseout(function () {
+    //     $(this).removeClass('border border-dark');
+    // });
+    // curSecs.hover(
+    //     function () {
+    //         $(this).addClass('border border-dark');
+    //     },
+    //     function () {
+    //         $(this).removeClass('border border-dark');
+    //     }
+    // );
+
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
 
-    menuBClick.click(function ( ) {
+    menuBClick.click(function () {
         if (!$(this).hasClass('active')) {
             menuBClick.removeClass('active');
             $(this).addClass('active');
