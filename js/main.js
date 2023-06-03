@@ -180,6 +180,26 @@ $(document).ready(function () {
     //     }
     // });
 
+    // Галерея изображений на jQuery как создать с нуля, урок 30
+    let galleryBig = $('.galleryBig div img');
+    let galleryContainer = $('.galleryContainer').hide();
+
+    $('.galleryShowB').click(function () {
+        if ($(this).text() == '+') {
+            $(this).text('-');
+        } else {
+            $(this).text('+');
+        }
+        galleryContainer.slideToggle(500);
+    });
+    $('.gallerySmall div img').click(function () {
+        if (galleryBig.attr('src') !== $(this).attr('src')) {
+            $('.gallerySmall div img').fadeTo(250, 1).removeClass('border border-dark');;
+            $(this).fadeTo(250, 0.5).addClass('border border-dark');
+            galleryBig.hide().attr('src', $(this).attr('src')).fadeIn(1000);
+        }
+    });
+
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
