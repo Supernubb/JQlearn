@@ -103,7 +103,6 @@ $(document).ready(function () {
     //     'background-color': 'rgb(255, 38, 0)' // !на цвет не действует
     // },2000, () => {alert('Yes!')}); // алерт будет показан столько, сколько элементов в menuButtons
 
-
     // Добавить HTML код на jQuery, урок 19
     // let secBlockELHtmlChanged = $('body > div > div.row.secsRow > div.col-12.bg-primary.active > div > div:nth-child(1) > div');
     // secBlockELHtmlChanged.before('<div>New html before!</div>');
@@ -111,22 +110,31 @@ $(document).ready(function () {
     // secBlockELHtmlChanged.append('<div>New html append!</div>');
     // secBlockELHtmlChanged.prepend('<div>New html prepend!</div>');
 
+    // Ручные циклы на jQuery, Метод each() и $(this), урок 20
+    let curSercs = $('.secsRow > div').each(function () {
+        if ($(this).attr('class') == 'col-12 bg-primary active') {
+            $(this).addClass('eachClass');
+        }
+    });;
 
 
 
 
 
 
-
+    console.log(curSercs);
 
     // tabs
-    let nonActiveSec = $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
+    $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
 
     menuBClick.click(function (menuEl) {
-        menuBClick.removeClass('active');
-        let target = $(menuEl.target).addClass('active');
-        $('body > div > div.row.secsRow > div').removeClass('active').hide(1000);
-        $(`body > div > div.row.secsRow > div.col-12.bg-primary[secID=${target.attr('secTarget')}]`).addClass('active').show(1000);
+        let target = $(menuEl.target);
+        if (!target.hasClass('active')) {
+            menuBClick.removeClass('active');
+            target.addClass('active');
+            $('body > div > div.row.secsRow > div').removeClass('active').hide(1000);
+            $(`body > div > div.row.secsRow > div.col-12.bg-primary[secID=${target.attr('secTarget')}]`).addClass('active').show(1000);
+        }
     });
 });
