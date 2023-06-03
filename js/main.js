@@ -141,19 +141,23 @@ $(document).ready(function () {
     // keyboard: keypress keydown keyup
     // window: load resize (browser window change) scroll 
 
-
+    // Традиционная модель событий на JS, урок 25
+    // старая модель событий
+    // Модель событий jQuery, урок 26
+    // $(window).scroll(function () {
+    //     console.log('scroll');
+    // });;
 
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
 
-    menuBClick.click(function (menuEl) {
-        let target = $(menuEl.target);
-        if (!target.hasClass('active')) {
+    menuBClick.click(function ( ) {
+        if (!$(this).hasClass('active')) {
             menuBClick.removeClass('active');
-            target.addClass('active');
+            $(this).addClass('active');
             $('body > div > div.row.secsRow > div').removeClass('active').hide(1000);
-            $(`body > div > div.row.secsRow > div.col-12.bg-primary[secID=${target.attr('secTarget')}]`).addClass('active').show(1000);
+            $(`body > div > div.row.secsRow > div.col-12.bg-primary[secID=${$(this).attr('secTarget')}]`).addClass('active').show(1000);
         }
     });
 });
