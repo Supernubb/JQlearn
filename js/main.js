@@ -200,6 +200,9 @@ $(document).ready(function () {
         }
     });
 
+    // Выбор и фильтрация элементов формы на jQuery, урок 31
+    // $(':reset').fadeOut(3000);
+
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
