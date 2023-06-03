@@ -72,25 +72,31 @@ $(document).ready(function () {
 
     // $('.secRow').slideUp(2000).slideDown(2000);
 
+    // // let curAttr = $('body > div > div.row.secRow > div.col-12');
+    // // // .attr('secID')
+    // // curAttr.attr('secID', '00');
+    // // curAttr.removeAttr('secID');;
+    // // console.log(arAttr);
+    // function removeAttr(bClass, rAttr) {
+    //     let curBlockJq = $('.' + bClass + ' > div.col-12');
+    //     curBlockJq.removeAttr(rAttr);
+    //     console.log(curBlockJq);
+    // };
+    // function changeAttr(bClass, chAttr, newValuechAttr) {
+    //     let curBlockJq = $('.' + bClass + ' > div.col-12');
+    //     curBlockJq.attr(chAttr, newValuechAttr);
+    //     console.log(curBlockJq);
+    // };
+    // changeAttr('secRow', 'secID', 55);
 
+    // tabs
+    let nonActiveSec = $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
+    let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
 
-
-    // let curAttr = $('body > div > div.row.secRow > div.col-12');
-    // // .attr('secID')
-    // curAttr.attr('secID', '00');
-    // curAttr.removeAttr('secID');;
-    // console.log(arAttr);
-    function removeAttr(bClass, rAttr) {
-        let curBlockJq = $('.' + bClass + ' > div.col-12');
-        curBlockJq.removeAttr(rAttr);
-        console.log(curBlockJq);
-    };
-    function changeAttr(bClass, chAttr, newValuechAttr) {
-        let curBlockJq = $('.' + bClass + ' > div.col-12');
-        curBlockJq.attr(chAttr, newValuechAttr);
-        console.log(curBlockJq);
-    };
-    changeAttr('secRow', 'secID', 55);
-
-
+    menuBClick.click(function (menuEl) {
+        menuBClick.removeClass('active');
+        let target = $(menuEl.target).addClass('active');
+        $('body > div > div.row.secsRow > div').removeClass('active').hide(1000);
+        $(`body > div > div.row.secsRow > div.col-12.bg-primary[secID=${target.attr('secTarget')}]`).addClass('active').show(1000);
+    });
 });

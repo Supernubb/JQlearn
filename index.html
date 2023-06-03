@@ -7,6 +7,7 @@
    <title>Bootstrap demo</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
    <script src="js/jquery-3.7.0.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
@@ -18,32 +19,43 @@
    <div class="container">
       <!-- menu -->
       <div class="row gx-5 mb-3">
-         <div class="col-3">
-            <div class="bg-info">0</div>
+         <div class="col-3 ">
+            <div class="bg-info active" secTarget="0">Пункт меню 0</div>
          </div>
          <div class="col-3">
-            <div class="bg-info">1</div>
+            <div class="bg-info" secTarget="1">Пункт меню 1</div>
          </div>
          <div class="col-3">
-            <div class="bg-info">2</div>
+            <div class="bg-info" secTarget="2">Пункт меню 2</div>
          </div>
          <div class="col-3">
-            <div class="bg-info">3</div>
+            <div class="bg-info" secTarget="3">Пункт меню 3</div>
          </div>
       </div>
       <!-- menus sections -->
-      <div class="row secRow">
-         <div class="col-12" secID="11">
-            <div class="bg-primary">0</div>
+      <div class="row secsRow">
+         <div class="col-12 bg-primary active" secID="0">
+            <div class="row">
+               <div class="col-12"><div>0</div></div>
+               <div class="col-12"><div>1</div></div>
+               <div class="col-12"><div>2</div></div>
+               <div class="col-12"><div>3</div></div>
+            </div>
          </div>
-         <div class="col-12" secID="12">
-            <div class="bg-primary">1</div>
+         <div class="col-12 bg-primary" secID="1">
+            <div class="row">
+               <div class="col-12"><div>1</div></div>
+            </div>
          </div>
-         <div class="col-12" secID="21">
-            <div class="bg-primary">2</div>
+         <div class="col-12 bg-primary" secID="2">
+            <div class="row">
+               <div class="col-12"><div>2</div></div>
+            </div>
          </div>
-         <div class="col-12" secID="22">
-            <div class="bg-primary">3</div>
+         <div class="col-12 bg-primary" secID="3">
+            <div class="row">
+               <div class="col-12"><div>3</div></div>
+            </div>
          </div>
       </div>
    </div>
