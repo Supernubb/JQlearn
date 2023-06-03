@@ -96,6 +96,13 @@ $(document).ready(function () {
     //     'background-color': 'rgb(255, 38, 0)'
     // });
 
+    // Анимация CSS стилей на jQuery с помощью метода animate(), урок 18
+    // let menuButtons = $('body > div > div.row.gx-5.mb-3 > div > div');
+    // menuButtons.removeClass('bg-info').animate({
+    //     'padding': '15px',
+    //     'background-color': 'rgb(255, 38, 0)' // !на цвет не действует
+    // },2000);
+
 
 
 
