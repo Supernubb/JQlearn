@@ -31,12 +31,15 @@ $(document).ready(function () {
     // let activeSecH = activeSec.height(300);
     // console.log(activeSecH, activeSecW);
 
-    function getBlockWH(curBlock) {
-        let curBlockJq = $('.' + curBlock);
-        let curBlockW = curBlockJq.width();
-        let curBlockH = curBlockJq.height();
-        let curBlockT = curBlockJq.text('H: ' + curBlockH + ' W: ' + curBlockW);
-    };
-    getBlockWH('bg-primary');
+    // function getBlockWH(curBlock) {
+    //     let curBlockJq = $('.' + curBlock);
+    //     let curBlockW = curBlockJq.width();
+    //     let curBlockH = curBlockJq.height();
+    //     let curBlockT = curBlockJq.text('H: ' + curBlockH + ' W: ' + curBlockW);
+    // };
+    // getBlockWH('bg-primary');
+
+    let curBlock = $('.secRow').html('<div class="col-12">New HTML!</div>');
+    console.log(curBlock);
 
 });
