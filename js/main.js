@@ -127,6 +127,10 @@ $(document).ready(function () {
     // let curSercs = $('.secsRow > div').remove();
     // $('div > div> div > div ').after(curSercs);
 
+    // Выбрать разные элементы на jQuery по HTML атрибуту, урок 23
+    // $('.col-3, .col-12').css('padding', '30px');
+    // $('.col-12.bg-primary[secID]').css('padding', '300px');
+
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
     let menuBClick = $('body > div > div.row.gx-5.mb-3 > div > div');
