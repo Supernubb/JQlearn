@@ -27,7 +27,7 @@
 
 $(document).ready(function () {
 let activeSec = $('body > div > div.row.secRow > div');
-activeSec.hide(3000);
+activeSec.hide();
 console.log(activeSec);
 
 });
