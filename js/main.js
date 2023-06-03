@@ -238,6 +238,9 @@ $(document).ready(function () {
     //     $('#exampleInputPassword1').val($(this).val());
     // });
 
+    // Блокировка элементов формы на jQuery, урок 36
+    // .attr('disabled', 'disables')
+
 
 
     // tabs
