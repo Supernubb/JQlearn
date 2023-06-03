@@ -166,11 +166,19 @@ $(document).ready(function () {
     // );
 
     // Объект события eventObject на jQuery, урок 28
-    let curSecs = $('.secsRow > div').click(function (e) {
-        console.log(e.pageX + ' ' + e.pageY);
-        console.log(e.altKey);
-        console.log(e.target);
-    });;
+    // let curSecs = $('.secsRow > div').click(function (e) {
+    //     console.log(e.pageX + ' ' + e.pageY);
+    //     console.log(e.altKey);
+    //     console.log(e.target);
+    // });
+
+    // Отмена обычного поведения элемента на jQuery, урок 29
+    // let curSecs = $('body > div > div.row.gx-5.mb-3 > div > div').click(function (e) {
+    //     let ans = confirm('Want to send pass?');
+    //     if (!ans) {
+    //         e.preventDefault();
+    //     }
+    // });
 
     // tabs
     $('body > div > div.row.secsRow > div.col-12.bg-primary:not(.active)').hide();
